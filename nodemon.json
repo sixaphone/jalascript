@@ -1,0 +1,16 @@
+{
+  "watch": [
+    "src",
+    ".env"
+  ],
+  "ext": "ts,json,env",
+  "ignore": [
+    "*.test.ts",
+    "*.spec.ts",
+    "node_modules"
+  ],
+  "delay": 50,
+  "execMap": {
+    "ts": "node -r ts-node/register -r tsconfig-paths/register"
+  }
+}

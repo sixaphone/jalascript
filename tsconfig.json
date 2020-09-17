@@ -1,0 +1,72 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "module": "commonjs",
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "target": "es2019",
+    "lib": [
+      "es2020"
+    ],
+    "removeComments": true,
+    "noEmitOnError": true,
+    "importHelpers": true,
+    "downlevelIteration": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": false,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "newLine": "LF",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "@types"
+    ],
+    "paths": {
+      "@context/*": [
+        "src/context/*"
+      ],
+      "@di/*": [
+        "src/di/*"
+      ],
+      "@decorators/*": [
+        "src/decorators/*"
+      ],
+      "@exceptions/*": [
+        "src/exceptions/*"
+      ],
+      "@platform/*": [
+        "src/platform/*"
+      ],
+      "@services/*": [
+        "src/services/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ]
+    }
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "/node_modules",
+    "@types",
+    "**/*.spec.ts"
+  ]
+}

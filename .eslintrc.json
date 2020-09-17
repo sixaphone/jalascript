@@ -1,0 +1,29 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "extends": [
+    "google",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "rules": {
+    "require-jsdoc": "off",
+    "new-cap": "off",
+    "prettier/prettier": "error",
+    "no-unused-vars": "off",
+    "no-implicit-any": "off"
+  },
+  "ignorePatterns": [
+    "/node_modules"
+  ]
+}
