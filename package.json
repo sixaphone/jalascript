@@ -1,8 +1,10 @@
 {
-  "name": "jalascript",
+  "name": "@sixaphone/jalascript",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.ts",
+  "description": "Minimalistic express server framework with typescript integration.",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "webpack",
@@ -13,8 +15,17 @@
     "format": "prettier --write \"src/**/*.ts\""
   },
   "types": "@types/index.d.ts",
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "express",
+    "typescript",
+    "web",
+    "framework"
+  ],
+  "author": {
+    "email": "miki.halilcevic@gmail.com",
+    "name": "sixaphone",
+    "url": "https://github.com/sixaphone"
+  },
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
